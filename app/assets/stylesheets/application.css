@@ -26,10 +26,14 @@ header{
 	margin-top: 20px;
 }
 
+h2, h3{
+	color: #2d423b !important;
+	font-weight: bold !important;
+}
+
 h2{
 	font-size: 2rem !important;
 }
-<<<<<<< Updated upstream
 
 label.first{
 	margin-top: 20px;
@@ -38,5 +42,13 @@ label.first{
 #chart{
 	height: 500px;
 }
-=======
->>>>>>> Stashed changes
+
+.button{
+	background-color: #b360a8 !important;
+	border-color: #b928db !important;
+	border-radius: 4px !important;
+	color: #fff !important;
+	text-shadow: #2d423b 2px 2px 1px !important;
+	font-weight: bold !important;
+}
+
