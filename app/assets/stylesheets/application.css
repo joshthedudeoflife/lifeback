@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require foundation_and_overrides
-
+ *= require font-awesome
  *= require_tree .
  */
 
@@ -29,6 +29,7 @@ header{
 h2{
 	font-size: 2rem !important;
 }
+<<<<<<< Updated upstream
 
 label.first{
 	margin-top: 20px;
@@ -37,3 +38,5 @@ label.first{
 #chart{
 	height: 500px;
 }
+=======
+>>>>>>> Stashed changes
