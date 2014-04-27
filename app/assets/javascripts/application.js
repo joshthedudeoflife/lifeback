@@ -17,3 +17,26 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function(){
+	$('#calendar').fullCalendar({
+		events: [
+	        {
+	            title: 'Call Therapist',
+	            start: '2014-04-27'
+	        },
+	        {
+	            title: 'Alcohol Anonymous',
+	            start: '2014-04-27 16:30:00',
+	            end: '2014-04-27 18:30:00',
+	            allDay: false
+	        }
+	    ],
+	    color: 'yellow',   // an option!
+	    textColor: 'black', // an option!
+        height: 650,
+        defaultView: 'agendaDay',
+        editable: true
+	});
+    
+});

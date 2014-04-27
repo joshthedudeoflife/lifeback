@@ -13,3 +13,15 @@
 
  *= require_tree .
  */
+
+.center{
+	text-align: center;
+}
+
+#front_video{
+	margin-top: 40px;
+}
+
+#front_button{
+	margin-top: 20px;
+}
