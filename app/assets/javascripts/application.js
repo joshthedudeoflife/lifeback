@@ -34,7 +34,7 @@ $(document).ready(function(){
 	    ],
 	    color: 'yellow',   // an option!
 	    textColor: 'black', // an option!
-        height: 650,
+        height: 400,
         defaultView: 'agendaDay',
         editable: true
 	});
