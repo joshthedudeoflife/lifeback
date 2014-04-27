@@ -1,0 +1,59 @@
+<div class="row">
+	<div class="small-3 column">
+		<h2>Health Points:</h2>
+		<p id="points"></p>
+	</div>
+</div>
+<div class="row">
+	<div class="small-8 column">
+		<div id='chart'></div>
+	</div>
+	<div class="small-4 column">
+		<h3>Sleep</h3>
+		<p>5 h 58 min</p>
+	</div>
+	<div class="small-4 column">
+		<h3>Steps</h3>
+		<p>7,656</p>
+	</div>
+	<div class="small-4 column">
+		<h3>Very Active Minutes</h3>
+		<p>20 min</p>
+	</div>
+</div>
+<script type="text/javascript">
+	var sleep = 5.58;
+	var steps = 7656;
+	var minutes = 20;
+	var meetings = 2;
+
+	var stepsRatio = steps/10000*100;
+	var minRatio = minutes/30 * 100;
+	var sleepRatio = sleep * 50 / 8;
+	var meetingRatio = meetings * 100;
+
+	google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Activites', 'Sleep', 'Steps', 'Very Active Minutes', 'Meeting Attendance' ],
+        ['1', sleepRatio, stepsRatio, minRatio, meetingRatio ],
+        ['2', 15, 40, 10, 100],
+        ['3', 40, 100, 30, 0],
+        ['4', 30, 100, 0, 100],
+      ]);
+
+      var options = {
+        legend: { position: 'top', maxLines: 3 },
+		bar: { groupWidth: '75%' },
+        isStacked: true,
+      };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart'));
+        chart.draw(data, options);
+      }
+      $(document).ready(function(){
+      	$('#points').text(Math.round(stepsRatio + minRatio + sleepRatio + meetingRatio) + ' Points');
+      });
+</script>
+</script>

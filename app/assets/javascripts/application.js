@@ -38,5 +38,4 @@ $(document).ready(function(){
         defaultView: 'agendaDay',
         editable: true
 	});
-    
 });

@@ -33,3 +33,7 @@ h2{
 label.first{
 	margin-top: 20px;
 }
+
+#chart{
+	height: 500px;
+}
