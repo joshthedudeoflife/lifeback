@@ -57,7 +57,10 @@ label.first{
 	background: #fff !important;
 	color: #2d423b !important;
 	font-size: 14pt !important;
-	margin-left: 20px;
+}
+
+.top-bar ul.left.nav-white{
+	margin-left: 20px !important;
 }
 
 .top-bar ul li a:hover, .top-bar ul li a:focus{
