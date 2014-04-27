@@ -52,3 +52,22 @@ label.first{
 	font-weight: bold !important;
 }
 
+.top-bar ul li a{
+	text-align: center;
+	background: #fff !important;
+	color: #2d423b !important;
+	font-size: 14pt !important;
+	margin-left: 20px;
+}
+
+.top-bar ul li a:hover, .top-bar ul li a:focus{
+	border-bottom: 2px solid #30a83a;
+}
+
+.top-bar-section ul{
+	background: #fff !important;
+}
+nav{
+	margin-right: 20px;
+}
+
