@@ -1,3 +1,29 @@
 // Place all the styles related to the rewards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$border: 1px dashed #999999;
+
+.rewards-row {
+  margin-bottom: 100px;
+
+  div.column a {
+    border: $border;
+    display: block;
+    margin: 15px 10px;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+
+    .desc {
+      height: 150px;
+      padding-top: 50px;
+    }
+
+    .points {
+      border-top: $border;
+      margin: 0 -10px;
+      padding: 12px 0;
+    }
+  }
+}
