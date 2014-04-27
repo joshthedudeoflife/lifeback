@@ -18,10 +18,14 @@
 	text-align: center;
 }
 
-#front_video{
-	margin-top: 40px;
+header{
+	margin-bottom: 40px;
 }
 
 #front_button{
 	margin-top: 20px;
+}
+
+h2{
+	font-size: 2rem !important;
 }
