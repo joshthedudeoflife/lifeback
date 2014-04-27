@@ -24,7 +24,7 @@ label.first{
 /* Meghan's Stylesheet */ 
 
 header{
-	margin: 20px 20px 40px 20px;
+	margin: 20px 30px 40px 20px;
 	background-color: #fff;
 	color: #000;
 }
@@ -40,9 +40,44 @@ header{
 	color: #000;
 }
 
-.top-bar-section ul.right ul.left {
-	background: #fff;
-	color: #000;
+.top-bar ul li a {
+	background-color: #fff !important;
+	color: #000 !important;
+	font-size: 16px;
 }
+
+.kashi {
+	 background-image:url(kashi.jpg);
+	 background-size: 100%;
+	 background-repeat: no-repeat;
+}
+
+.pfitness {
+	 background-image:url(planetfitness.jpg);
+	 background-size: 45%;
+	 background-repeat: no-repeat;
+	 margin-top: 5px;
+}
+
+.solixir {
+	 background-image:url(solixir.jpg);
+	 background-size: 35%;
+	 background-repeat: no-repeat;
+	 margin-top: 5px;
+}
+
+.wholefoods {
+	 background-image:url(wholefoods.png);
+	 background-size: 90%;
+	 background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
 
 

@@ -16,8 +16,10 @@ $border: 1px dashed #999999;
     text-align: center;
 
     .desc {
+      background-position: center top;
+      box-sizing: border-box;
       height: 150px;
-      padding-top: 50px;
+      padding-top: 110px;
     }
 
     .points {
