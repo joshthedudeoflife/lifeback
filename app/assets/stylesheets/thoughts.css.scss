@@ -1,3 +1,31 @@
 // Place all the styles related to the thoughts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.mood,
+.page-nav,
+.content {
+  padding: 0 0 20px;
+}
+
+.previous {
+  &:before {
+    content: '<';
+    padding-right: 10px;
+    vertical-align: text-top;
+  }
+}
+
+.mood {
+  label {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+}
+
+.page-nav {
+  i.fa {
+    color: #000;
+    margin-left: 12px;
+  }
+}
