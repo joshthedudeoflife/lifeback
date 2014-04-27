@@ -13,18 +13,18 @@
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
-        <h1><a href="/">Life Back</a></h1>
+        <div id="logo"></div>
       </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
 
-    <section class="top-bar-section">
-      <ul class="right">
+    <section class="top-bar-section nav-white">
+      <ul class="right nav-white">
         <li><a href="#">Talk to Someone</a></li>
       </ul>
       <!-- Left Nav Section -->
-      <ul class="left">
+      <ul class="left nav-white">
         <li><%= link_to "My Day", :controller => "challenges", :action => "show" %></li>
         <li><%= link_to "Health", :controller => "fitness", :action => "show" %></a></li>
         <li><%= link_to "Thoughts", :controller => "thoughts", :action => "show" %></li>
@@ -32,6 +32,7 @@
       </ul>
     </section>
   </nav>
+  <hr>
 </header>
 
 <%= yield %>

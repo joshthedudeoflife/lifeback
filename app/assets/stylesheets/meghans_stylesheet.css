@@ -1,1 +1,48 @@
+
+/*Ali's base*/
+
+.center{
+	text-align: center;
+}
+
+#front_button{
+	margin-top: 20px;
+}
+
+h2{
+	font-size: 2rem !important;
+}
+
+label.first{
+	margin-top: 20px;
+}
+
+#chart{
+	height: 500px;
+}
+
 /* Meghan's Stylesheet */ 
+
+header{
+	margin: 20px 20px 40px 20px;
+	background-color: #fff;
+	color: #000;
+}
+
+#logo{
+ width:106px;
+ height:35px;
+ background-image:url(logo.png);
+}
+
+.top-bar{
+	background: #fff;
+	color: #000;
+}
+
+.top-bar-section ul.right ul.left {
+	background: #fff;
+	color: #000;
+}
+
+
