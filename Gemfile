@@ -6,7 +6,14 @@ gem 'devise', '~> 3.2.4'
 gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record
+group :development, :test do
 gem 'sqlite3'
+end
+
+#postgress
+group :production do
+gem 'pg'
+end
 
 gem 'foundation-rails'
 
@@ -38,6 +45,11 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
+
+#postgress
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

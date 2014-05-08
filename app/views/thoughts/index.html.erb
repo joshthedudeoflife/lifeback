@@ -1,6 +1,7 @@
 <% @thoughts.each do |thought| %>
     <tr>
       <td><%= thought.id %></td>
+    	<td><%= thought.created_at %><td>
       <td><%= link_to "view", thought %></td>  
     </tr>
   <% end %>
