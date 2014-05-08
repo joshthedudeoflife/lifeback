@@ -4,7 +4,7 @@ class ThoughtsController < ApplicationController
   	@thoughts = Thought.all
   end
   def show
-  	#@thought = Thought.find params[:id]
+  	@thought = Thought.find params[:id]
   end
 
   def new
