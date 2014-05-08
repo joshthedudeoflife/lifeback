@@ -1,0 +1,45 @@
+<%= form_for @thought do |f| %>
+<div class="row mood">
+  <div class="small-1 column">
+    <label>Mood</label>
+  </div>
+  <div class="small-3 column">
+    <select>
+      <option value="cycling">Happy</option>
+      <option value="walking">Sad</option>
+      <option value="running">Mad</option>
+    </select>
+  </div>
+  <div class="small-8 column"><i class="fa fa-smile-o"></i></div>
+</div>
+
+<div class="row page-nav">
+  <div class="small-6 column">
+    <a href="#" class="previous">Previous</a>
+  </div>
+
+  <div class="small-6 column">
+    <div class="right">
+      <a href="#">
+        <i class="fa fa-pencil fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-film fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fa fa-camera-retro fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row content">
+  <div class="small-12 column">
+    <h2>Thought for the day of <%= Time.now.strftime("%B %d, %Y") %></h2>
+		<%= f.text_area :content %>
+  </div>
+</div>
+ 
+ <div id="front_button" class="small-4 small-centered column center"><%= f.submit class: "button" %></div>
+</div>
+<% end %>

@@ -11,7 +11,7 @@ root :to => "home#index"
   get '/my_day/show', to: 'challenges#show'
   get '/health/show', to: 'fitness#show'
   get '/rewards/show', to: 'rewards#show'
-  get '/thoughts/show', to: 'thoughts#show'
+ resources :thoughts
 #resouces :challenges
 
 
