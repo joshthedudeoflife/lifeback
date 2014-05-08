@@ -32,7 +32,7 @@ header{
 #logo{
  width:106px;
  height:35px;
- background-image:url(logo.png);
+ background-image: url(image-path("logo.png"));
 }
 
 .top-bar{
@@ -47,27 +47,27 @@ header{
 }
 
 .kashi {
-	 background-image:url(kashi.jpg);
+	 background-image: url(image-path("kashi.jpg"));
 	 background-size: 100%;
 	 background-repeat: no-repeat;
 }
 
 .pfitness {
-	 background-image:url(planetfitness.jpg);
+	 background-image: url(image-path("planetfitness.jpg"));
 	 background-size: 45%;
 	 background-repeat: no-repeat;
 	 margin-top: 5px;
 }
 
 .solixir {
-	 background-image:url(solixir.jpg);
+	 background-image: url(image-path("solixir.jpg"));
 	 background-size: 35%;
 	 background-repeat: no-repeat;
 	 margin-top: 5px;
 }
 
 .wholefoods {
-	 background-image:url(wholefoods.png);
+	 background-image: url(image-path("wholefoods.png"));
 	 background-size: 90%;
 	 background-repeat: no-repeat;
 }
