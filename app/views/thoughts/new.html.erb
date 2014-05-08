@@ -36,7 +36,7 @@
 <div class="row content">
   <div class="small-12 column">
     <h2>Thought for the day of <%= Time.now.strftime("%B %d, %Y") %></h2>
-		<%= f.text_area :content %>
+		<%= f.text_area :content, :id => "message_area", :cols => 10, :rows => 14  %>
   </div>
 </div>
  
