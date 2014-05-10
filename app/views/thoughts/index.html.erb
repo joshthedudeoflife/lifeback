@@ -1,7 +1,12 @@
 <% @thoughts.each do |thought| %>
+    <table>
+    	<th>
+    		<td>Thought Date</td>
+    	</th>
     <tr>
       <td><%= thought.id %></td>
-    	<td><%= thought.created_at %><td>
+    	<td><%= thought.created_at.strftime("%d %b, %Y") %><td>
       <td><%= link_to "view", thought %></td>  
     </tr>
   <% end %>
+  	</table>
