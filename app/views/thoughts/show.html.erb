@@ -14,7 +14,7 @@
 
 <div class="row page-nav">
   <div class="small-6 column">
-    <a href="#" class="previous">Previous</a>
+    <%= link_to "Thoughts Index", :action => "index" %>
   </div>
 
   <div class="small-6 column">
@@ -34,8 +34,7 @@
 
 <div class="row content">
   <div class="small-12 column">
-    <h2>Your thoughts</h2>
-    
+    <h2><%= @thought.created_at.strftime("%d %b, %Y") %></h2>
    <%= @thought.content%>
   </div>
 </div>
