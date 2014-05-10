@@ -10,6 +10,9 @@ group :development, :test do
 gem 'sqlite3'
 end
 
+
+gem "google_visualr", ">= 2.1"
+
 #postgress
 group :production do
 gem 'pg'
@@ -31,6 +34,9 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+#jquery turbo links
+gem 'jquery-turbolinks'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
