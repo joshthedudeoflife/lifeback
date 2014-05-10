@@ -34,6 +34,10 @@ header{
  height:35px;
  background-image: url(image-path("logo.png"));
 }
+#background{
+	background-image: url(image-path("backgroundrun.png"));
+	background-position: center;
+}
 
 .top-bar{
 	background: #fff;
