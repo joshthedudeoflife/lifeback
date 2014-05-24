@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  step: 1.5
+  distance: 1.5
+  date: 2014-05-23
+  time: 2014-05-23 23:07:28
+  sleep: 1.5
+  user_id: 1
+
+two:
+  step: 1.5
+  distance: 1.5
+  date: 2014-05-23
+  time: 2014-05-23 23:07:28
+  sleep: 1.5
+  user_id: 1
