@@ -15,8 +15,5 @@ root :to => "home#index"
  resources :thoughts
  resources :routines
 
-
-
-
   
 end
