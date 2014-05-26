@@ -1,11 +1,5 @@
 
-		<h3>Sleep</h3>
-		<p><%= @routine.sleep %></p>
 		
-		<h3>Steps</h3>
-		<p><%= @routine.step %></p>
-		<h3>Distance</h3>
-		<p><%= @routine.distance %></p>
 
 <body>
 <table>
@@ -14,11 +8,18 @@
 <th>Steps</th>
 <th>Distance</th>
 </tr>
+<% @routines.each do |routine| %>
 <tr>
-<td><%= @routine.sleep %></td>
-<td><%= @routine.step %></td>
-<td><%= @routine.distance %></td>
+<td><%= routine.sleep %></td>
+<td><%= routine.step %></td>
+<td><%= routine.distance %></td>
 </tr>
+<% end %>
 </table>
 </body>
-</html>
+
+<h2>Import stuff</h2>
+<%= form_tag import_routines_path, multipart: true do%>
+<%= file_field_tag :file %>
+<%= submit_tag "Import" %>
+<% end %>

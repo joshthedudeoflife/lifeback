@@ -13,7 +13,12 @@ root :to => "home#index"
   get '/routines/show', to: 'routines#show'
 
  resources :thoughts
- resources :routines
+
+
+  resources :routines do
+    collection { post :import }
+  end
+
 
   
 end
