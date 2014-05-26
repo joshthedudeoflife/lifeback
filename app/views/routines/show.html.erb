@@ -1,15 +1,19 @@
 
-		
-
 <body>
 <table>
 <tr>
+<th>Id</th>
+<th>Date</th>
+<th>Time</th>
 <th>Sleep</th>
 <th>Steps</th>
 <th>Distance</th>
 </tr>
 <% @routines.each do |routine| %>
 <tr>
+<td><%= routine.id %></td>
+<td><%= routine.date %></td>
+<td><%= routine.time.strftime("%H:%M") %></td>
 <td><%= routine.sleep %></td>
 <td><%= routine.step %></td>
 <td><%= routine.distance %></td>
@@ -21,5 +25,5 @@
 <h2>Import stuff</h2>
 <%= form_tag import_routines_path, multipart: true do%>
 <%= file_field_tag :file %>
-<%= submit_tag "Import" %>
+<%= submit_tag "Import", class: "button" %>
 <% end %>
