@@ -1,6 +1,6 @@
 class Routine < ActiveRecord::Base
 	belongs_to :user
-	require 'CSV'
+	require 'csv'
 
 	def self.import(file)
 		CSV.foreach(file.path, headers: true) do |row|
