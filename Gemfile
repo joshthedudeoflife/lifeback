@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+#high charts
+gem "highcharts-rails", "~> 3.0.0"
+
 #devise
 gem 'devise', '~> 3.2.4'
 

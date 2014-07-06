@@ -5,7 +5,8 @@ class RoutinesController < ApplicationController
 	end
 	def show
 		@routines = Routine.all
-		#@routine = Routine.find params[:id] 
+		#@routine = Routine.find params[:id]
+		#FNORD_METRIC.event(@routines.attributes.merge(_type: :view_routines))
 	end
 	def new
 	end

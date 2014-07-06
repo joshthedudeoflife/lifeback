@@ -1,4 +1,37 @@
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"%>
+<%= javascript_include_tag "highcharts" %>
 
+<script>
+$(function () { 
+$('#chart').highcharts({
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Fruit Consumption'
+    },
+    xAxis: {
+        categories: ['Apples', 'Bananas', 'Oranges']
+    },
+    yAxis: {
+        title: {
+            text: 'Fruit eaten'
+        }
+    },
+    series: [{
+        name: 'Jane',
+        data: [1, 0, 4]
+    }, {
+        name: 'John',
+        data: [5, 7, 3]
+    }]
+});
+});​
+</script>
+
+<div id = "chart"> </div>
+
+<div class="row content">
 <body>
 <table>
 <tr>
@@ -22,8 +55,10 @@
 </table>
 </body>
 
+
 <h2>Import stuff</h2>
 <%= form_tag import_routines_path, multipart: true do%>
 <%= file_field_tag :file %>
 <%= submit_tag "Import", class: "button" %>
 <% end %>
+</div>

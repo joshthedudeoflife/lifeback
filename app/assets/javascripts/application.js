@@ -16,6 +16,9 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.turbolinks
+//= require highcharts
+
+
 
 $(function(){ $(document).foundation(); });
 
