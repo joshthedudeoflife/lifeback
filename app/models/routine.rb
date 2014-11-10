@@ -6,7 +6,7 @@ class Routine < ActiveRecord::Base
 		CSV.foreach(file.path, headers: true) do |row|
 			#creates new record
 			#Routine.create! row.to_hash
-			routine_hash = row.to_hash # exclude the price field
+			routine_hash = row.to_hash 
       routine = Routine.where(id: routine_hash["id"])
 
       if routine.count == 1

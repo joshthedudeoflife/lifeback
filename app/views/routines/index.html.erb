@@ -1,65 +1,62 @@
-<h1>routines index</h1>
-Gonna upload some CSV stuff soon
-
 <div class="row">
-	<div class="small-3 column">
-		<h2>Health Points:</h2>
-		<p id="points"></p>
-	</div>
+    <div class="small-3 column">
+        <h2>Health Points:</h2>
+        <p id="points"></p>
+    </div>
 </div>
 <div class="row">
-	<div class="small-8 column">
-		<div id='chart'></div>
-	</div>
-	<div class="small-4 column">
-		<h3>Sleep</h3>
-		<p>5 h 58 min</p>
-	</div>
-	<div class="small-4 column">
-		<h3>Steps</h3>
-		<p>7,656</p>
-	</div>
-	<div class="small-4 column">
-		<h3>Very Active Minutes</h3>
-		<p>20 min</p>
-	</div>
+    <div class="small-8 column">
+        <div id='chart'></div>
+    </div>
+    <div class="small-4 column">
+        <h3>Sleep</h3>
+        <p>5 h 58 min</p>
+    </div>
+    <div class="small-4 column">
+        <h3>Steps</h3>
+        <p>7,656</p>
+    </div>
+    <div class="small-4 column">
+        <h3>Very Active Minutes</h3>
+        <p>20 min</p>
+    </div>
 </div>
 <script type="text/javascript">
-	var sleep = 5.58;
-	var steps = 7656;
-	var minutes = 20;
-	var meetings = 2;
+    var sleep = 5.58;
+    var steps = 7656;
+    var minutes = 20;
+    var meetings = 2;
 
-	var stepsRatio = steps/10000*100;
-	var minRatio = minutes/30 * 100;
-	var sleepRatio = sleep * 50 / 8;
-	var meetingRatio = meetings * 100;
+    var stepsRatio = steps/10000*100;
+    var minRatio = minutes/30 * 100;
+    var sleepRatio = sleep * 50 / 8;
+    var meetingRatio = meetings * 100;
 
-	google.load("visualization", "1", {packages:["corechart"]});
+    google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-      	var dataTable = new google.visualization.DataTable();
-	  dataTable.addColumn('string', 'Activities');
-	  dataTable.addColumn('number', 'Sleep');
-	  dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
-	  dataTable.addColumn('number', 'Steps');
-	  dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
-	  dataTable.addColumn('number', 'Very Active Minutes');
-	  dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
-	  dataTable.addColumn('number', 'Meeting Attendance');
-	  dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+        var dataTable = new google.visualization.DataTable();
+      dataTable.addColumn('string', 'Activities');
+      dataTable.addColumn('number', 'Sleep');
+      dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+      dataTable.addColumn('number', 'Steps');
+      dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+      dataTable.addColumn('number', 'Very Active Minutes');
+      dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
+      dataTable.addColumn('number', 'Meeting Attendance');
+      dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
 
-	  dataTable.addRows([
-	    ['1', sleepRatio, tooltipCreate(sleepRatio, 'Sleep'), stepsRatio, tooltipCreate(stepsRatio, 'Steps'), minRatio, tooltipCreate(minRatio, 'Very Active Minutes'), meetingRatio, tooltipCreate(meetingRatio, 'Meetings Attended') ],
+      dataTable.addRows([
+        ['1', sleepRatio, tooltipCreate(sleepRatio, 'Sleep'), stepsRatio, tooltipCreate(stepsRatio, 'Steps'), minRatio, tooltipCreate(minRatio, 'Very Active Minutes'), meetingRatio, tooltipCreate(meetingRatio, 'Meetings Attended') ],
         ['2', 15, tooltipCreate(15, 'Sleep'), 40, tooltipCreate(40, 'Steps'), 10, tooltipCreate(10, 'Very Active Minutes'), 100, tooltipCreate(100, 'Meetings Attended')],
         ['3', 40, tooltipCreate(40, 'Sleep'), 100, tooltipCreate(100, 'Steps'), 30, tooltipCreate(30, 'Very Active Minutes'), 0, tooltipCreate(0, 'Meetings Attended')],
         ['4', 30, tooltipCreate(30, 'Sleep'), 100, tooltipCreate(100, 'Steps'), 0, tooltipCreate(0, 'Very Active Minutes'), 100, tooltipCreate(100, 'Meetings Attended')],
-	  ]);
+      ]);
 
       var options = {
-      	tooltip: { isHtml: true},
+        tooltip: { isHtml: true},
         legend: { position: 'top', maxLines: 3 },
-		bar: { groupWidth: '75%' },
+        bar: { groupWidth: '75%' },
         isStacked: true,
         vAxis: { textPosition: 'none'}
       };
@@ -69,28 +66,62 @@ Gonna upload some CSV stuff soon
       }
 
       function tooltipCreate(ratio, title){
-      	var stats = null;
-      	if(title == 'Sleep'){
-      		stats = Math.round(ratio*8/50);
-      	}
-      	else if(title == 'Steps'){
-      		stats = Math.round(ratio*10000/100);
-      	}
-      	else if(title == 'Very Active Minutes'){
-      		stats = Math.round(ratio*30/100);
-      	}
-      	else if(title == 'Meetings Attended'){
-      		stats = Math.round(ratio/100);
-      	}
-      	else{
-      		stats = 'error';
-      	}
-      	return '<p><b>Health Points:</b> ' + Math.round(ratio) + '</p>' +
-      	'<p><b>'+ title + ':</b> '+ stats +'</p>';
+        var stats = null;
+        if(title == 'Sleep'){
+            stats = Math.round(ratio*8/50);
+        }
+        else if(title == 'Steps'){
+            stats = Math.round(ratio*10000/100);
+        }
+        else if(title == 'Very Active Minutes'){
+            stats = Math.round(ratio*30/100);
+        }
+        else if(title == 'Meetings Attended'){
+            stats = Math.round(ratio/100);
+        }
+        else{
+            stats = 'error';
+        }
+        return '<p><b>Health Points:</b> ' + Math.round(ratio) + '</p>' +
+        '<p><b>'+ title + ':</b> '+ stats +'</p>';
       }
 
       $(document).ready(function(){
-      	$('#points').text(Math.round(stepsRatio + minRatio + sleepRatio + meetingRatio) + ' Points');
+        $('#points').text(Math.round(stepsRatio + minRatio + sleepRatio + meetingRatio) + ' Points');
       });
 </script>
 </script>
+
+<div class="row content">
+<body>
+<table>
+<tr>
+<th>Id</th>
+<th>Date</th>
+<th>Time</th>
+<th>Sleep</th>
+<th>Steps</th>
+<th>Distance</th>
+</tr>
+<% @routines.each do |routine| %>
+<tr>
+<td><%= routine.id %></td>
+<td><%= routine.date %></td>
+<td><%= routine.time.strftime("%H:%M") %></td>
+<td><%= routine.sleep %></td>
+<td><%= routine.step %></td>
+<td><%= routine.distance %></td>
+</tr>
+<% end %>
+</table>
+</body>
+
+
+<h2>Import your Routine from Argus</h2>
+<%= form_tag import_routines_path, multipart: true do%>
+<%= file_field_tag :file %>
+<%= submit_tag "Import", class: "button" %>
+<% end %>
+</div>
+
+

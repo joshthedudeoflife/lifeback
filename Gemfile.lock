@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/Kjarrigan/flot-rails.git
+  revision: c20cf50084856963f8554c762dd44cbb4a156c97
+  specs:
+    flot-rails (0.0.4)
+      jquery-rails (>= 2.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,7 +56,7 @@ GEM
       railties (>= 3.1.0)
       sass (>= 3.2.0)
     google_visualr (2.3.0)
-    highcharts-rails (3.0.10)
+    highcharts-rails (4.0.1)
       railties (>= 3.1)
     hike (1.2.3)
     i18n (0.6.9)
@@ -136,10 +143,11 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise (~> 3.2.4)
+  flot-rails!
   font-awesome-rails
   foundation-rails
   google_visualr (>= 2.1)
-  highcharts-rails (~> 3.0.0)
+  highcharts-rails (~> 4.0.1)
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks

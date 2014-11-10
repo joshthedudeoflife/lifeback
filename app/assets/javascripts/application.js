@@ -17,29 +17,8 @@
 //= require_tree .
 //= require jquery.turbolinks
 //= require highcharts
+//= require highcharts/highcharts-more
+//= require jquery.flot
+//= require jquery.flot.pie
 
 
-
-$(function(){ $(document).foundation(); });
-
-$(document).ready(function(){
-	$('#calendar').fullCalendar({
-		events: [
-	        {
-	            title: 'Call Therapist',
-	            start: '2014-04-27'
-	        },
-	        {
-	            title: 'Alcohol Anonymous',
-	            start: '2014-04-27 16:30:00',
-	            end: '2014-04-27 18:30:00',
-	            allDay: false
-	        }
-	    ],
-	    color: 'yellow',   // an option!
-	    textColor: 'black', // an option!
-        height: 400,
-        defaultView: 'agendaDay',
-        editable: true
-	});
-});

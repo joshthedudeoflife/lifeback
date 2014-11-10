@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 #high charts
-gem "highcharts-rails", "~> 3.0.0"
+gem "highcharts-rails", "~> 4.0.1"
 
 #devise
 gem 'devise', '~> 3.2.4'
@@ -16,6 +16,7 @@ end
 
 gem "google_visualr", ">= 2.1"
 
+gem 'flot-rails', :git => "https://github.com/Kjarrigan/flot-rails.git"
 #postgress
 group :production do
 gem 'pg'
