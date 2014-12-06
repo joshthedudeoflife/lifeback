@@ -12,6 +12,7 @@ root :to => "home#index"
   get '/rewards/show', to: 'rewards#show'
   get '/routines/show', to: 'routines#show'
 
+
  resources :thoughts
 
 

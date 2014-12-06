@@ -1,4 +1,5 @@
-<div class="row">
+<%= high_chart("my_bar_div", @bar) %>
+<!-- <div class="row">
     <div class="small-3 column">
         <h2>Health Points:</h2>
         <p id="points"></p>
@@ -91,7 +92,7 @@
       });
 </script>
 </script>
-
+ -->
 <div class="row content">
 <body>
 <table>
@@ -117,7 +118,7 @@
 </body>
 
 
-<h2>Import your Routine from Argus</h2>
+<h2>Import your Routine from Argus</h2> <%= image_tag("ArgusLogo.jpg", :alt => "argus logo") %>
 <%= form_tag import_routines_path, multipart: true do%>
 <%= file_field_tag :file %>
 <%= submit_tag "Import", class: "button" %>

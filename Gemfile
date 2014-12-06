@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
+
+
+
+#yet another charts system
+gem 'chartkick', '~> 1.3.2'
 #high charts
-gem "highcharts-rails", "~> 4.0.1"
+gem 'lazy_high_charts'
 
 #devise
 gem 'devise', '~> 3.2.4'
