@@ -3,6 +3,7 @@ class RoutinesController < ApplicationController
 	
 	def index
 		@routines = Routine.all
+		@lastfive = Routine.last(5).reverse
 		      #  @graph = LazyHighCharts::HighChart.new('column') do |f|
         #    f.series(:name=>'Correct',:data=> [1, 2, 3, 4, 5])
         #    f.series(:name=>'Incorrect',:data=> [10, 2, 3, 1, 4] )       
