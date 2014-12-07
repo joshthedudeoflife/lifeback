@@ -25,7 +25,7 @@
 </body>
 
 
-<h2>Import your Routine from Argus</h2> <%= image_tag("ArgusLogo.jpg", :alt => "argus logo") %>
+<h2>Import your Routine from Argus</h2> <%= image_tag "ArugsLogo.jpg" %>
 <%= form_tag import_routines_path, multipart: true do%>
 <%= file_field_tag :file %>
 <%= submit_tag "Import", class: "button" %>
