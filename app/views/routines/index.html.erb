@@ -5,7 +5,6 @@
 <body>
 <table>
 <tr>
-<th>Id</th>
 <th>Date</th>
 <th>Time</th>
 <th>Sleep</th>
@@ -15,8 +14,7 @@
 <h2>Recent Activity</h2>
 <% @lastfive.each do |routine| %>
 <tr>
-<td><%= routine.id %></td>
-<td><%= routine.date %></td>
+<td><%= routine.date.strftime.gsub(/00/, '') %></td>
 <td><%= routine.time.strftime("%H:%M") %></td>
 <td><%= routine.sleep %></td>
 <td><%= routine.step %></td>
