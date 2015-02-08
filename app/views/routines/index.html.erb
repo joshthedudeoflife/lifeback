@@ -24,6 +24,38 @@
 </table>
 </body>
 
+<body>
+<table>
+<h3>Sleep</h3>
+<%= high_chart("my_id4", @chart) do |c| %>
+          <%= raw "options.tooltip.formatter = function() {return '<b> YUPI!! '+ this.point.name +'</b>: '+ this.y +' %';}"  %>
+          <%= raw "options.plotOptions.pie.dataLabels.formatter = function() { if (this.y > 5) return this.point.name; }"  %>
+      <% end %>
+
+</table>
+</body>
+<body>
+
+<table>
+<h3>Steps</h3>  
+<%= high_chart("my_id5", @chartTwo) do |c| %>
+          <%= raw "options.tooltip.formatter = function() {return '<b> YUPI!! '+ this.point.name +'</b>: '+ this.y +' %';}"  %>
+          <%= raw "options.plotOptions.pie.dataLabels.formatter = function() { if (this.y > 5) return this.point.name; }"  %>
+      <% end %>
+
+</table>
+</body>
+
+<table>
+<h3>Distance</h3>  
+<%= high_chart("my_id6", @chartThree) do |c| %>
+          <%= raw "options.tooltip.formatter = function() {return '<b> YUPI!! '+ this.point.name +'</b>: '+ this.y +' %';}"  %>
+          <%= raw "options.plotOptions.pie.dataLabels.formatter = function() { if (this.y > 5) return this.point.name; }"  %>
+      <% end %>
+
+</table>
+</body>
+
 
 <h2>Import your Routine from Argus</h2> <%= image_tag "ArugsLogo.jpg" %>
 <%= form_tag import_routines_path, multipart: true do%>
