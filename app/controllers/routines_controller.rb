@@ -49,17 +49,17 @@ class RoutinesController < ApplicationController
                :type=> 'pie',
                :name=> 'Sleep',
                :data=> [
-                  ['Firefox',   45.0],
-                  ['IE',       26.8],
+                  ['Day 1',   45.0],
+                  ['Day 2',       26.8],
                   {
                      :name=> 'Chrome',    
                      :y=> 12.8,
                      :sliced=> true,
                      :selected=> true
                   },
-                  ['Safari',    8.5],
-                  ['Opera',     6.2],
-                  ['Others',   0.7]
+                  ['Day 3',    8.5],
+                  ['Day 4',     6.2],
+                  ['Day 5',   0.7]
                ]
       }
       f.series(series)
@@ -83,17 +83,17 @@ class RoutinesController < ApplicationController
                :type=> 'pie',
                :name=> 'Steps',
                :data=> [
-                  ['Firefox',   45.0],
-                  ['IE',       26.8],
+                  ['Day 1',   45.0],
+                  ['Day 2',       26.8],
                   {
                      :name=> 'Chrome',    
                      :y=> 12.8,
                      :sliced=> true,
                      :selected=> true
                   },
-                  ['Safari',    8.5],
-                  ['Opera',     6.2],
-                  ['Others',   0.7]
+                  ['Day 3',    8.5],
+                  ['Day 4',     6.2],
+                  ['Day 5',   0.7]
                ]
       }
       f.series(series)
@@ -117,17 +117,17 @@ class RoutinesController < ApplicationController
                :type=> 'pie',
                :name=> 'Distance',
                :data=> [
-                  ['Firefox',   45.0],
-                  ['IE',       26.8],
+                  ['Day 1',   45.0],
+                  ['Day 2',       26.8],
                   {
                      :name=> 'Chrome',    
                      :y=> 12.8,
                      :sliced=> true,
                      :selected=> true
                   },
-                  ['Safari',    8.5],
-                  ['Opera',     6.2],
-                  ['Others',   0.7]
+                  ['Day 3',    8.5],
+                  ['Day 4',     6.2],
+                  ['Day 5',   0.7]
                ]
       }
       f.series(series)
