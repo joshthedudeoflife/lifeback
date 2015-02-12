@@ -52,7 +52,7 @@ class RoutinesController < ApplicationController
                   ['Day 1',   45.0],
                   ['Day 2',       26.8],
                   {
-                     :name=> 'Chrome',    
+                     :name=> 'Day 6',    
                      :y=> 12.8,
                      :sliced=> true,
                      :selected=> true
@@ -86,7 +86,7 @@ class RoutinesController < ApplicationController
                   ['Day 1',   45.0],
                   ['Day 2',       26.8],
                   {
-                     :name=> 'Chrome',    
+                     :name=> 'Day 6',    
                      :y=> 12.8,
                      :sliced=> true,
                      :selected=> true
@@ -120,7 +120,7 @@ class RoutinesController < ApplicationController
                   ['Day 1',   45.0],
                   ['Day 2',       26.8],
                   {
-                     :name=> 'Chrome',    
+                     :name=> 'Day 6',    
                      :y=> 12.8,
                      :sliced=> true,
                      :selected=> true
